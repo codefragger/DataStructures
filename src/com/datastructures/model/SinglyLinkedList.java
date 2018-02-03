@@ -158,6 +158,17 @@ public class SinglyLinkedList {
 		Node sorted = singlyLinkedList.mergeSort(singlyLinkedList.head);
 		singlyLinkedList.head = sorted;
 		singlyLinkedList.print();
+		System.out.println(singlyLinkedList.length());
 		
+	}
+	
+	public int length() {
+		int count = 0 ; 
+		Node temp = this.head;
+		while(temp != null){
+			temp = temp.next;
+			count++;
+		}
+		return count;
 	}
 }
